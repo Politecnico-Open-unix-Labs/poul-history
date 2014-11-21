@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?xml-stylesheet type="text/xsl" href="history.xsl"?>
+<history timestamp="12 novembre 2015">
+    <veteran>
+        <name>Giangiorgio Pinotti</name>
+        <face>photos/1.jpg</face>
+        <period>
+            <from>Fine 2009</from>
+            <to>Gennaio 2015</to>
+        </period>
+        <governance>
+            <role year="2010">Segretario</role>
+            <role year="2011">Presidente</role>
+        </governance>
+        <biography>I'm a nerd</biography>
+        <attribution>Ho fatto tanti talk ed eventi</attribution>
+        <tale>Una volta il poul era aperto solo due volte a settimana!</tale>
+        <career>I'm working as engineer at SuperSystem™ Enterprise SVG4</career>
+        <photos>
+            <photo desc="Bella" thumb="photos/2_small.jpg">photos/2.jpg</photo>
+        </photos>
+    </veteran>
+</history>
+
