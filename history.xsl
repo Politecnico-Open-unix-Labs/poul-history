@@ -46,7 +46,7 @@ With love from esseks <3
                     blockquote {
                         font-style: italic;
                         color: grey;
-                        border-left: 2px solid grey;
+                        border-left: 2px solid gray;
                         margin-left: 1em;
                         padding-left: 0.5em;
                     }
