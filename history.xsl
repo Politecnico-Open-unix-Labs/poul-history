@@ -41,6 +41,7 @@ With love from esseks <3
                     }
                     img {
                         max-width: 100%;
+                        box-shadow: 3px 3px 3px gray;
                     }
                     blockquote {
                         font-style: italic;
@@ -58,6 +59,7 @@ With love from esseks <3
                     }
                     .photos li {
                         display: inline-block;
+                        margin: 0 5px 5px 0;
                     }
                     footer {
                         border-top: 1px solid gray;
