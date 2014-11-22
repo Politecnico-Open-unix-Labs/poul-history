@@ -93,9 +93,11 @@ With love from esseks <3
             <header>
                 <h1><xsl:value-of select="name"/></h1>
                 <small>
+                    <xsl:text>(</xsl:text>
                     <xsl:value-of select="period/from"/>
                     <xsl:text> - </xsl:text>
                     <xsl:value-of select="period/to"/>
+                    <xsl:text>)</xsl:text>
                 </small>
                 <xsl:if test="face">
                 </xsl:if>
