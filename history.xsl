@@ -20,7 +20,7 @@ With love from esseks <3
                     html {
                         font-size: 12pt;
                         max-width: 960px;
-                        margin: auto;
+                        margin: 1em auto;
                     }
                     section > h2 {
                         font-size: 14pt;
