@@ -77,7 +77,7 @@ With love from esseks <3
                 <h1>La saggezza dei grandi padri ci accompagna</h1>
                 <ul>
                     <xsl:for-each select="veteran">
-                        <li><a href="#{generate-id(.)}">
+                        <li><a href="#{@id}">
                             <xsl:value-of select="name"/>
                         </a></li>
                     </xsl:for-each>
@@ -95,7 +95,7 @@ With love from esseks <3
         </html>
     </xsl:template>
     <xsl:template match="veteran">
-        <section id="{generate-id(.)}">
+        <section id="{@id}">
             <header>
                 <h1><xsl:value-of select="name"/></h1>
                 <small>
