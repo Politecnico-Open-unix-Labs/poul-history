@@ -66,12 +66,6 @@ With love from esseks <3
                         padding-left: 0;
                         list-style: none;
                     }
-                    .roles li {
-                        display: inline-block;
-                    }
-                    .roles li:not(:last-child):after {
-                        content: ", "
-                    }
                 </style>
             </head>
             <body>
