@@ -99,11 +99,11 @@ With love from esseks <3
                     <xsl:value-of select="period/to"/>
                     <xsl:text>)</xsl:text>
                 </small>
-                <xsl:if test="face">
+                <xsl:if test="governance/role">
+                    <ul class="roles">
+                        <xsl:apply-templates select="governance"/>
+                    </ul>
                 </xsl:if>
-                <ul class="roles">
-                    <xsl:apply-templates select="governance"/>
-                </ul>
                 <xsl:apply-templates select="face"/>
             </header>
             <h2>Al POuL</h2>
