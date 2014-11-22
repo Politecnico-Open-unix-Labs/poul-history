@@ -105,7 +105,7 @@ With love from esseks <3
             </header>
             <xsl:if test="biography/text() or tale/text()">
                 <h2>Chi è</h2>
-                <blockquote><xsl:value-of select="tale"/></blockquote>
+                <blockquote><xsl:copy-of select="tale/node()"/></blockquote>
                 <p><xsl:copy-of select="biography/node()"/></p>
             </xsl:if>
             <xsl:if test="attribution/text()">
