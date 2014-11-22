@@ -52,11 +52,11 @@ With love from esseks <3
                     section {
                         border-top: 1px solid gray;
                     }
-                    section > ul {
+                    .photos {
                         list-style: none;
                         padding: 0;
                     }
-                    section > ul li {
+                    .photos li {
                         display: inline-block;
                     }
                     footer {
