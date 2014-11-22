@@ -1,9 +1,9 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <?xml-stylesheet type="text/xsl" href="history.xsl"?>
 <history timestamp="12 novembre 2015">
-    <veteran>
+    <veteran id="nick-or-whatever">
         <name>Giangiorgio Pinotti</name>
-        <face>photos/1.jpg</face>
+        <face thumb="photos/1_small.jpg">photos/1.jpg</face>
         <period>
             <from>Fine 2009</from>
             <to>Gennaio 2015</to>
