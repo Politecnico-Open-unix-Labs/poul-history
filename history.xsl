@@ -53,11 +53,11 @@ With love from esseks <3
                     section {
                         border-top: 1px solid gray;
                     }
-                    .photos {
+                    .tiles {
                         list-style: none;
                         padding: 0;
                     }
-                    .photos li {
+                    .tiles li {
                         display: inline-block;
                         margin: 0 5px 5px 0;
                     }
@@ -75,7 +75,7 @@ With love from esseks <3
             </head>
             <body>
                 <h1>La saggezza dei grandi padri ci accompagna</h1>
-                <ul>
+                <ul class="tiles" id="index">
                     <xsl:for-each select="veteran">
                         <li><a href="#{@id}">
                             <xsl:value-of select="name"/>
@@ -126,7 +126,7 @@ With love from esseks <3
                 <p><xsl:copy-of select="career/node()"/></p>
             </xsl:if>
             <xsl:if test="photos/photo">
-                <ul class="photos">
+                <ul class="tiles">
                     <xsl:apply-templates select="photos/photo"/>
                 </ul>
             </xsl:if>
