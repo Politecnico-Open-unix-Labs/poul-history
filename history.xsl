@@ -122,11 +122,9 @@ With love from esseks <3
         </a></p>
     </xsl:template>
     <xsl:template match="photo">
-        <li>
-            <a href="{text()}">
-                <img src="{@thumb}" alt="{@desc}"/>
-            </a>
-        </li>
+        <li><a href="{text()}">
+            <img src="{@thumb}" alt="{@desc}"/>
+        </a></li>
     </xsl:template>
     <xsl:template match="role">
         <li>
