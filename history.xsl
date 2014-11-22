@@ -129,8 +129,10 @@ With love from esseks <3
     <xsl:template match="role">
         <li>
             <xsl:value-of select="."/>
-            <xsl:text> nel </xsl:text>
-            <xsl:value-of select="@year"/>
+            <xsl:if test="@year">
+                <xsl:text> nel </xsl:text>
+                <xsl:value-of select="@year"/>
+            </xsl:if>
         </li>
     </xsl:template>
 </xsl:stylesheet>
