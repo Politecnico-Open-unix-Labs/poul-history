@@ -39,6 +39,9 @@ With love from esseks <3
                     header {
                         font-size: 10pt;
                     }
+                    img {
+                        max-width: 100%;
+                    }
                     blockquote {
                         font-style: italic;
                         color: grey;
