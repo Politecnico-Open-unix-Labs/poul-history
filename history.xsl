@@ -71,6 +71,12 @@ With love from esseks <3
                         padding-left: 0;
                         list-style: none;
                     }
+                    #index {
+                        text-align: center;
+                    }
+                    #index > li:not(:last-child):after {
+                        content: " | ";
+                    }
                 </style>
             </head>
             <body>
