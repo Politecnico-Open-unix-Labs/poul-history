@@ -98,11 +98,11 @@ With love from esseks <3
                     <xsl:value-of select="period/to"/>
                 </small>
                 <xsl:if test="face">
-                    <p><img src="{face}" alt="{name}"/></p>
                 </xsl:if>
                 <ul class="roles">
                     <xsl:apply-templates select="governance"/>
                 </ul>
+                <xsl:apply-templates select="face"/>
             </header>
             <h2>Al POuL</h2>
             <blockquote><xsl:value-of select="tale"/></blockquote>
@@ -113,6 +113,11 @@ With love from esseks <3
                 <ul><xsl:apply-templates select="photos/photo"/></ul>
             </xsl:if>
         </section>
+    </xsl:template>
+    <xsl:template match="face">
+        <p><a href="{text()}">
+            <img src="{@thumb}" alt="{../name}"/>
+        </a></p>
     </xsl:template>
     <xsl:template match="photo">
         <li>
