@@ -106,13 +106,23 @@ With love from esseks <3
                 </xsl:if>
                 <xsl:apply-templates select="face"/>
             </header>
-            <h2>Al POuL</h2>
-            <blockquote><xsl:value-of select="tale"/></blockquote>
-            <p><xsl:value-of select="biography"/></p>
-            <h2>Dopo</h2>
-            <p><xsl:value-of select="career"/></p>
-            <xsl:if test="photos">
-                <ul><xsl:apply-templates select="photos/photo"/></ul>
+            <xsl:if test="biography/text() or tale/text()">
+                <h2>Chi è</h2>
+                <blockquote><xsl:value-of select="tale"/></blockquote>
+                <p><xsl:copy-of select="biography/node()"/></p>
+            </xsl:if>
+            <xsl:if test="attribution/text()">
+                <h2>Al POuL</h2>
+                <p><xsl:copy-of select="attribution/node()"/></p>
+            </xsl:if>
+            <xsl:if test="career/text()">
+                <h2>Dopo</h2>
+                <p><xsl:copy-of select="career/node()"/></p>
+            </xsl:if>
+            <xsl:if test="photos/photo">
+                <ul class="photos">
+                    <xsl:apply-templates select="photos/photo"/>
+                </ul>
             </xsl:if>
         </section>
     </xsl:template>
