@@ -77,10 +77,13 @@ With love from esseks <3
                     #index > li:not(:last-child):after {
                         content: " | ";
                     }
+                    a[href="#main"] {
+                        float: right;
+                    }
                 </style>
             </head>
             <body>
-                <h1>La saggezza degli antichi ci accompagna</h1>
+                <h1 id="main">La saggezza degli antichi ci accompagna</h1>
                 <ul class="tiles" id="index">
                     <xsl:for-each select="veteran">
                         <li><a href="#{@id}">
@@ -103,6 +106,7 @@ With love from esseks <3
     <xsl:template match="veteran">
         <section id="{@id}">
             <header>
+                <a href="#main">↑ Top</a>
                 <h1><xsl:value-of select="name"/></h1>
                 <small>
                     <xsl:text>(</xsl:text>
