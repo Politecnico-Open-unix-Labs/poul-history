@@ -80,7 +80,7 @@ With love from esseks <3
                 </style>
             </head>
             <body>
-                <h1>La saggezza dei grandi padri ci accompagna</h1>
+                <h1>La saggezza degli antichi ci accompagna</h1>
                 <ul class="tiles" id="index">
                     <xsl:for-each select="veteran">
                         <li><a href="#{@id}">
