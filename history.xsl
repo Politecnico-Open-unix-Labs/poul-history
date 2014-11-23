@@ -79,6 +79,7 @@ With love from esseks <3
                     }
                     a[href="#main"] {
                         float: right;
+                        text-decoration: none;
                     }
                 </style>
             </head>
