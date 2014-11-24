@@ -21,6 +21,7 @@ With love from esseks <3
                         font-size: 12pt;
                         max-width: 960px;
                         margin: 1em auto;
+                        font-family: Arial, Helvetica, sans-serif;
                     }
                     section > h2 {
                         font-size: 14pt;
