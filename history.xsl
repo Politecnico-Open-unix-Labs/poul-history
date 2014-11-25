@@ -151,6 +151,11 @@ With love from esseks <3
     </xsl:template>
     <xsl:template match="photo">
         <li><a href="{text()}">
+            <xsl:if test="@desc">
+                <xsl:attribute name="title">
+                    <xsl:value-of select="@desc"/>
+                </xsl:attribute>
+            </xsl:if>
             <img src="{@thumb}" alt="{@desc}"/>
         </a></li>
     </xsl:template>
