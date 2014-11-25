@@ -124,18 +124,18 @@ With love from esseks <3
                 </xsl:if>
                 <xsl:apply-templates select="face"/>
             </header>
-            <xsl:if test="biography/text() or tale/text()">
+            <xsl:if test="biography/text() | tale/text()">
                 <h2>Chi è</h2>
                 <blockquote><xsl:copy-of select="tale/node()"/></blockquote>
-                <p><xsl:copy-of select="biography/node()"/></p>
+                <xsl:apply-templates select="biography"/>
             </xsl:if>
             <xsl:if test="attribution/text()">
                 <h2>Al POuL</h2>
-                <p><xsl:copy-of select="attribution/node()"/></p>
+                <xsl:apply-templates select="attribution"/>
             </xsl:if>
             <xsl:if test="career/text()">
                 <h2>Dopo</h2>
-                <p><xsl:copy-of select="career/node()"/></p>
+                <xsl:apply-templates select="career"/>
             </xsl:if>
             <xsl:if test="photos/photo">
                 <ul class="tiles">
@@ -167,6 +167,16 @@ With love from esseks <3
                 <xsl:value-of select="@year"/>
             </xsl:if>
         </li>
+    </xsl:template>
+    <xsl:template match="attribution | career | biography">
+        <xsl:choose>
+            <xsl:when test="not(p)">
+                <p><xsl:value-of select="."/></p>
+            </xsl:when>
+            <xsl:otherwise>
+                <xsl:copy-of select="node()"/>
+            </xsl:otherwise>
+        </xsl:choose>
     </xsl:template>
 </xsl:stylesheet>
 
