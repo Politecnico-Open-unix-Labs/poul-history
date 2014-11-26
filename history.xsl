@@ -169,14 +169,16 @@ With love from esseks <3
         </li>
     </xsl:template>
     <xsl:template match="attribution | career | biography">
-        <xsl:choose>
-            <xsl:when test="not(p)">
-                <p><xsl:value-of select="."/></p>
-            </xsl:when>
-            <xsl:otherwise>
-                <xsl:copy-of select="node()"/>
-            </xsl:otherwise>
-        </xsl:choose>
+        <xsl:for-each select="node()">
+            <xsl:choose>
+                <xsl:when test="self::text()[normalize-space()]">
+                    <p><xsl:value-of select="."/></p>
+                </xsl:when>
+                <xsl:otherwise>
+                    <xsl:copy-of select="."/>
+                </xsl:otherwise>
+            </xsl:choose>
+        </xsl:for-each>
     </xsl:template>
 </xsl:stylesheet>
 
