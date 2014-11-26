@@ -10,7 +10,7 @@ With love from esseks <3
     version="1.0"
 >
     <xsl:output
-        method="xml" indent="yes" encoding="UTF-8"
+        method="html" indent="yes" encoding="UTF-8"
         doctype-system="about:legacy-compat" omit-xml-declaration="yes"
         cdata-section-elements="style" media-type="text/html" version="5.0"
     />
