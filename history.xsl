@@ -9,7 +9,11 @@ With love from esseks <3
     xmlns="http://www.w3.org/1999/xhtml"
     version="1.0"
 >
-    <xsl:output method="html" indent="yes" encoding="UTF-8"/>
+    <xsl:output
+        method="xml" indent="yes" encoding="UTF-8"
+        doctype-system="about:legacy-compat" omit-xml-declaration="yes"
+        cdata-section-elements="style" media-type="text/html" version="5.0"
+    />
     <xsl:template match="/history">
         <html xmlns="http://www.w3.org/1999/xhtml" lang="it">
             <head>
